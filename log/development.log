@@ -5898,3 +5898,290 @@ Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bd
 
 
 Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-20 20:41:21 +0100
+
+
+Started GET "/" for ::1 at 2015-06-20 20:45:23 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered posts/index.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 55ms (Views: 54.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-1264da104b52a31727f88f7cf467336ae9ae23a865fefa3e02fe66d45d0ed240.css?body=1" for ::1 at 2015-06-20 20:45:23 +0100
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-20 20:45:23 +0100
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-20 20:45:23 +0100
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-06-20 20:45:23 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-20 20:45:23 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-20 20:45:23 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-06-20 20:45:23 +0100
+
+
+Started GET "/posts/8" for ::1 at 2015-06-20 20:45:25 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "8"]]
+  Rendered posts/show.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 53ms (Views: 51.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/8" for ::1 at 2015-06-20 20:52:59 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "8"]]
+  Rendered posts/show.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 33ms (Views: 31.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-20 20:52:59 +0100
+
+
+Started GET "/assets/application.self-1264da104b52a31727f88f7cf467336ae9ae23a865fefa3e02fe66d45d0ed240.css?body=1" for ::1 at 2015-06-20 20:52:59 +0100
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-06-20 20:52:59 +0100
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-20 20:52:59 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-20 20:52:59 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-06-20 20:52:59 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-20 20:52:59 +0100
+
+
+Started GET "/posts/8" for ::1 at 2015-06-20 20:54:23 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "8"]]
+  Rendered posts/show.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-20 20:54:23 +0100
+
+
+Started GET "/assets/application.self-99e74ddbe0fd57d44ace7469c660cea135016bd708f1464ef12673eb6a7b1df0.css?body=1" for ::1 at 2015-06-20 20:54:23 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-06-20 20:54:23 +0100
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-20 20:54:23 +0100
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-20 20:54:23 +0100
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-06-20 20:54:23 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-20 20:54:23 +0100
+
+
+Started GET "/posts/8/edit" for ::1 at 2015-06-20 20:54:25 +0100
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered posts/_form.html.haml (4.6ms)
+  Rendered posts/edit.html.haml within layouts/application (8.4ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/posts/8" for ::1 at 2015-06-20 20:54:36 +0100
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sakZgB5ENSRLuO0wxg/FqG4UJLhSBeXq4wLKvevOc1co2k4NxRFxa+LlfGNS+nKpnlqknRNK7dGB5nA2vBHo/w==", "post"=>{"title"=>"I am god", "content"=>"lol what am I like\r\nfucking shitpaisjkjs\r\nad\r\na\r\ndfa\r\n\r\nfsd\r\nga\r\ns\r\ng\r\nsgsdhjabskhdlias\r\nasofjakjshodiajs\r\n"}, "commit"=>"Update Post", "id"=>"8"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "posts" SET "content" = ?, "updated_at" = ? WHERE "posts"."id" = ?  [["content", "lol what am I like\r\nfucking shitpaisjkjs\r\nad\r\na\r\ndfa\r\n\r\nfsd\r\nga\r\ns\r\ng\r\nsgsdhjabskhdlias\r\nasofjakjshodiajs\r\n"], ["updated_at", "2015-06-20 19:54:36.580196"], ["id", 8]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/posts/8
+Completed 302 Found in 6ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/posts/8" for ::1 at 2015-06-20 20:54:36 +0100
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  Rendered posts/show.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 29ms (Views: 27.2ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/posts/8" for ::1 at 2015-06-20 20:54:39 +0100
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"vz2i9n7J2yi5H+08v7Msc8wjaGyiXhaSnxRV5LrRRE8mTvV7pZyfZxBCfG8rRptyPG3oSeMRHqn98O9v7Q7f5w==", "id"=>"8"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "posts" WHERE "posts"."id" = ?  [["id", 8]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2015-06-20 20:54:39 +0100
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered posts/index.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 41ms (Views: 39.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2015-06-20 20:58:06 +0100
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.haml (3.9ms)
+  Rendered posts/new.html.haml within layouts/application (6.1ms)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for ::1 at 2015-06-20 20:58:16 +0100
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+xAErEXC7yjhGcv1NB16u+ALdNSxRru5fiXef09ad3ZiY1MhnperZ0hEWqag6M26EEX08fAJs4IcwWT0GIXs3g==", "post"=>{"title"=>"TestPost please ignore", "content"=>"Drinking vinegar Portland stumptown, gentrify banh mi ennui chambray meditation mlkshk Shoreditch hella Schlitz freegan viral. Neutra single-origin coffee Schlitz small batch meh gastropub slow-carb pour-over, listicle whatever artisan. Street art YOLO PBR craft beer shabby chic American Apparel. Cliche polaroid health goth, authentic gastropub put a bird on it taxidermy. Pinterest heirloom fixie direct trade organic, leggings sriracha sartorial flannel readymade. Aesthetic +1 Truffaut typewriter beard, salvia irony trust fund messenger bag street art asymmetrical heirloom Godard keffiyeh tote bag. Helvetica selvage mustache flannel scenester chambray, four loko semiotics raw denim ennui kogi typewriter."}, "commit"=>"Create Post"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `posts' for nil:NilClass):
+  app/controllers/posts_controller.rb:22:in `create'
+
+
+  Rendered /Users/emmetbroaders/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /Users/emmetbroaders/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/emmetbroaders/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/emmetbroaders/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.6ms)
+
+
+Started POST "/posts" for ::1 at 2015-06-20 20:58:26 +0100
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+xAErEXC7yjhGcv1NB16u+ALdNSxRru5fiXef09ad3ZiY1MhnperZ0hEWqag6M26EEX08fAJs4IcwWT0GIXs3g==", "post"=>{"title"=>"TestPost please ignore", "content"=>"Drinking vinegar Portland stumptown, gentrify banh mi ennui chambray meditation mlkshk Shoreditch hella Schlitz freegan viral. Neutra single-origin coffee Schlitz small batch meh gastropub slow-carb pour-over, listicle whatever artisan. Street art YOLO PBR craft beer shabby chic American Apparel. Cliche polaroid health goth, authentic gastropub put a bird on it taxidermy. Pinterest heirloom fixie direct trade organic, leggings sriracha sartorial flannel readymade. Aesthetic +1 Truffaut typewriter beard, salvia irony trust fund messenger bag street art asymmetrical heirloom Godard keffiyeh tote bag. Helvetica selvage mustache flannel scenester chambray, four loko semiotics raw denim ennui kogi typewriter."}, "commit"=>"Create Post"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `posts' for nil:NilClass):
+  app/controllers/posts_controller.rb:22:in `create'
+
+
+  Rendered /Users/emmetbroaders/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/emmetbroaders/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/emmetbroaders/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/emmetbroaders/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.2ms)
+
+
+Started GET "/" for ::1 at 2015-06-20 20:58:32 +0100
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.haml within layouts/application (5.5ms)
+Completed 200 OK in 64ms (Views: 62.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/new" for ::1 at 2015-06-20 20:58:33 +0100
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.haml (3.8ms)
+  Rendered posts/new.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 55ms (Views: 54.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for ::1 at 2015-06-20 20:58:37 +0100
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s8pyEEn8ILNxifM1ecM85lmSrQ/+7BA9aBltWR+JMasquSWdkqlk/NjUYmbtNovnqdwtKr+jGAYK/dfSSFaqAw==", "post"=>{"title"=>"das", "content"=>"adsda"}, "commit"=>"Create Post"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `posts' for nil:NilClass):
+  app/controllers/posts_controller.rb:22:in `create'
+
+
+  Rendered /Users/emmetbroaders/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /Users/emmetbroaders/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/emmetbroaders/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/emmetbroaders/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (53.1ms)
+
+
+Started GET "/sign_in" for ::1 at 2015-06-20 20:58:57 +0100
+
+ActionController::RoutingError (No route matches [GET] "/sign_in"):
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/emmetbroaders/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/emmetbroaders/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/emmetbroaders/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/emmetbroaders/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/emmetbroaders/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/emmetbroaders/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.5ms)
+  Rendered /Users/emmetbroaders/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/emmetbroaders/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (71.6ms)
+
+
+Started GET "/sign_up" for ::1 at 2015-06-20 20:59:02 +0100
+
+ActionController::RoutingError (No route matches [GET] "/sign_up"):
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/emmetbroaders/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/emmetbroaders/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/emmetbroaders/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/emmetbroaders/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/emmetbroaders/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/emmetbroaders/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/emmetbroaders/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/emmetbroaders/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (69.2ms)
