@@ -9,12 +9,17 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
   end
 
+  def new
+    @post = current_user.posts.build
+  end
+
 	def new
 		@post = Post.new
 	end 
 
 	def create
 		@post = Post.new(post_params)
+    @post = current_user.posts.build(post_params)
 
 		if @post.save
 			redirect_to @post
