@@ -1,6 +1,5 @@
 #post_content
 	.original_post
-		%h1= @post.title
 		.info
 			= @post.user.email
 			at 
@@ -12,7 +11,7 @@
 
 		.image
 			- if @post.image?
-				= image_tag @post.image.url(:medium)	
+				= image_tag @post.image(:medium)	
 
 		%p= @post.content
 
