@@ -2,6 +2,9 @@
 	- @posts.each do |post|
 		.post	
 			%h2.title= link_to post.title, post
+			
+			%p.image= image_tag post.image.url(:thumb)
+
 			%p.date 
 				Published at
 				=post.created_at.strftime("%H:%M %d-%b-%y")

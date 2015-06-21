@@ -1,4 +1,7 @@
-= simple_form_for @post do |f|
-	= f.input :title
-	= f.input :content
-	= f.submit
+#form
+	= simple_form_for @post, html: { multipart: true } do |f|
+		%h3= f.input :title
+		%h3= f.input :content
+		%h3= f.submit
+		= f.label :image
+		= f.file_field :image	
