@@ -5,19 +5,17 @@
 	= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
 	%link{ rel: "stylesheet", href: "http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext", type: "text/css"}
 	%link{ rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css"}
-
-	= csrf_meta_tags
-
-%body
-
 	= javascript_include_tag 'application', 'data-turbolinks-track' => true
+	= csrf_meta_tags
 	= javascript_include_tag 'jquery'
 	= javascript_include_tag 'jquery.sticky'
 
-	:javascript		
-		$(document).ready(function(){
-			$(".main_header").sticky({ topSpacing: 0 });
-		});	
+	:javascript
+		$(window).load(function(){
+		$("header").sticky({ topSpacing: 0 });
+		});
+
+%body
 
 	%header.main_header.clearfix
 		.wrapper
@@ -26,6 +24,7 @@
 			#buttons
 				- if user_signed_in?
 					= link_to current_user.email
+					= link_to "New Post", new_post_path
 				- else
 					= link_to "Sign Up", new_user_registration_path
 					= link_to "Sign In", new_user_session_path
