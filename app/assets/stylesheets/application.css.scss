@@ -59,6 +59,7 @@ body {
 			color: white;
 			text-decoration: none;
 			font-weight: 100; 
+			font-size: .8em;
 		}	
 	}
 	.h2 {
@@ -68,7 +69,6 @@ body {
 
 #posts {
 	background: #FFF;
-	padding: 2em 5%;
 	.post {
 		margin: 1em 0;
 		padding: 1.5em 0;
@@ -98,7 +98,6 @@ body {
 #post_content {
 	background-color: white;
 	padding: 2em 5%;
-	border-radius: .5em;
 	h1 {
 		font-weight: 100;
 		font-size: 2em;
@@ -156,7 +155,6 @@ body {
 		.content {
 			width: 70%;
 			float: left;
-			// padding-top: 0.6em;
 		}
 		.buttons {
 			padding-top: 0.6em;
@@ -187,7 +185,6 @@ body {
 		color: #397CAC;
 		border: 1px solid #397CAC;
 		padding: 0.5em 1em;
-		border-radius: 0.2em;
 		text-decoration: none; 
 		background-color: #FFF;
 	}
@@ -196,7 +193,6 @@ body {
 		width: 60%;
 		min-height: 150px;
 		border: 1px solid #D1D1D1;
-		border-radius: .4em;
 		margin: 0;
 		margin-bottom: .5em;
 		margin-top: .5em;
@@ -204,7 +200,34 @@ body {
 	}
 }
 
+#new_post {
+	h3 {
+		color: #23b1f1;
+		font-size: 1.3rem;
+		margin: 0;
+		padding-bottom: 0.4em;
+	}
 
+	input[type="submit"] {
+		background: #23b1f1;
+		padding: .5em 1em;
+		color: white;
+		text-decoration: none;
+		font-weight: 100; 
+		font-size: .8em;
+		border: 0px;
+	}
+	textarea {
+		width: 40%;
+		min-height: 100px;
+		border: 1px solid #D1D1D1;
+		margin: 0;
+		margin-bottom: .5em;
+		margin-top: .5em;
+		align: right;
+		overflow: auto;  
+	}
+}
 
 
 
